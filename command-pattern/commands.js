@@ -9,21 +9,21 @@ class Command {
   }
 }
 
-const AddCommand = function(value) {
+const AddCommand = function (value) {
   // 1st argument is the function that executes this action (defined in Receiver)
   // 2nd argument is the function that performs the opposite action
   return new Command(add, subtract, value);
 };
 
-const SubtractCommand = function(value) {
+const SubtractCommand = function (value) {
   return new Command(subtract, add, value);
 };
 
-const MultiplyCommand = function(value) {
+const MultiplyCommand = function (value) {
   return new Command(multiply, divide, value);
 };
 
-const DivideCommand = function(value) {
+const DivideCommand = function (value) {
   return new Command(divide, multiply, value);
 };
 
@@ -31,5 +31,5 @@ module.exports = {
   AddCommand,
   SubtractCommand,
   MultiplyCommand,
-  DivideCommand
+  DivideCommand,
 };
