@@ -4,7 +4,8 @@
 
 class Singleton {
   static getInstance() {
-    if (!this.instance) this.instance = new Singleton();
+    if (!this.instance)
+      this.instance = new Singleton();
 
     return this.instance;
   }
