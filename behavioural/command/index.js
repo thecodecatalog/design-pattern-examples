@@ -1,15 +1,10 @@
 // This is the Client.
 // In our scenario this would have been directly calling functions in operations.js.
 // We've introduced the Command Pattern to decouple this Client from operations.js (Receiver).
-// This also allows us to introduce the Invoker (calculator.js) so we can track
+// This also allows us to introduce the Invoker (calculator.js) so we can track 
 // and undo any calculator operations.
 
-const {
-  AddCommand,
-  SubtractCommand,
-  MultiplyCommand,
-  DivideCommand,
-} = require("./commands");
+const { AddCommand, SubtractCommand, MultiplyCommand, DivideCommand } = require("./commands");
 const Calculator = require("./calculator");
 
 class Client {
